@@ -5,6 +5,7 @@ import androidx.annotation.DrawableRes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.madlevel4task2.R
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -23,4 +24,13 @@ data class Game(
     @ColumnInfo(name = "amount")
     var amount: Int
 
-    ) : Parcelable
+    ) : Parcelable {
+    companion object {
+        val possibleMoves = arrayListOf(
+            R.drawable.rock,
+            R.drawable.paper,
+            R.drawable.scissors
+        )
+    }
+}
+

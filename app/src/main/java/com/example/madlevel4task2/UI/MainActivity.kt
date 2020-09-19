@@ -1,14 +1,15 @@
 package com.example.madlevel4task2.UI
 
+import android.R.id.message
 import android.os.Bundle
 import android.view.Menu
-import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.madlevel4task2.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,16 +17,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        scissorImage.setImageResource(R.drawable.scissors)
-        rockImage.setImageResource(R.drawable.rock)
-        paperImage.setImageResource(R.drawable.paper)
         setupActionBarWithNavController(findNavController(R.id.nav_host_fragment))
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
-
         return true
     }
 

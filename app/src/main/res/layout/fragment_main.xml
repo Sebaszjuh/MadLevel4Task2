@@ -79,14 +79,14 @@
         android:layout_marginTop="22dp"
         android:layout_marginBottom="18dp"
         android:text="@string/statisticLabel"
-        app:layout_constraintBottom_toTopOf="@+id/main_fragment"
+        app:layout_constraintBottom_toTopOf="@+id/statistics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instructionText" />
 
     <TextView
-        android:id="@+id/main_fragment"
+        android:id="@+id/statistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
