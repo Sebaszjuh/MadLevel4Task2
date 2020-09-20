@@ -94,6 +94,9 @@ class MainFragment : Fragment() {
         return randomNumber
     }
 
+    /**
+     * Method for the gamemechanic to let the computerMove pick an action.
+     */
     private fun playGame(userMove: Int) {
         playerMove.setImageResource(possibleMoves[userMove])
         val computerMove = randomComputerMovePicker()
@@ -101,15 +104,18 @@ class MainFragment : Fragment() {
         addGameToDatabase(userMove, computerMove, gameResult)
     }
 
+    /**
+     * Adds result of the game to the database, calls update of statistics
+     */
     private fun addGameToDatabase(userMove: Int, computerMove: Int, result: Int) {
         var win = 0
-        var draw = 0
+        var tie = 0
         var loss = 0
-        if(result == 0){draw++}
+        if(result == 0){tie++}
         if(result < 0){loss++}
         if(result > 0){win++}
 
-        val game = Game(userMove, computerMove, Date(), result, win, loss, draw)
+        val game = Game(userMove, computerMove, Date(), result, win, loss, tie)
 
         CoroutineScope(Dispatchers.IO).launch {
             gamesRepository.insertGame(game)
@@ -118,13 +124,16 @@ class MainFragment : Fragment() {
             }
         }
     }
-    //TODO first time it gives no results
+
+    /**
+     * Method to update the onscreen win,loss,tie
+     */
     private suspend fun updateStatistics() {
         val wins = gamesRepository.getWins()
-        val draws = gamesRepository.getDraws()
+        val tie = gamesRepository.getTies()
         val losses = gamesRepository.getLosses()
         statistics.text =
-            resources.getString(R.string.statistics, wins, draws, losses)
+            resources.getString(R.string.statistics, wins, tie, losses)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

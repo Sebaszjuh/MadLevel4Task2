@@ -24,8 +24,8 @@ interface GameDAO {
     @Query("SELECT COUNT(win) FROM gameStatistic WHERE win == 1")
     suspend fun getWins(): Int
 
-    @Query("SELECT COUNT(draw) FROM gameStatistic WHERE draw == 1")
-    suspend fun getDraws(): Int
+    @Query("SELECT COUNT(tie) FROM gameStatistic WHERE tie == 1")
+    suspend fun getTies(): Int
 
     @Query("SELECT COUNT(loss) FROM gameStatistic WHERE loss == 1")
     suspend fun getLosses(): Int

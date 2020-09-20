@@ -10,7 +10,7 @@ import com.example.madlevel4task2.Model.Game
 
 
 // Database van product class
-@Database(entities = [Game::class], version = 1, exportSchema = false)
+@Database(entities = [Game::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class GameRoomDatabase : RoomDatabase(){
 

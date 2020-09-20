@@ -10,6 +10,8 @@
     <string name="versus">V.S.</string>
     <string name="statisticLabel">Your all time statistics</string>
     <string name="welcome">Welcome</string>
+    <string name="computerLabel">Computer</string>
+    <string name="playerLabel">You</string>
     <string name="instructions">Instructions: Select rock, paper or scissors to play</string>
 
 <!--    Strings for second Fragment-->
