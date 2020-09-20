@@ -1,5 +1,6 @@
 package com.example.madlevel4task2.UI
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -40,9 +41,15 @@ class MainFragment : Fragment() {
      * Initialises images and click listeners
      */
     private fun init() {
+        CoroutineScope(Dispatchers.Main).launch {
+            updateStatistics()
+        }
         scissorImage.setImageResource(R.drawable.scissors)
+        scissorImage.setBackgroundColor(Color.rgb(98,0,238))
         rockImage.setImageResource(R.drawable.rock)
+        rockImage.setBackgroundColor(Color.rgb(98,0,238))
         paperImage.setImageResource(R.drawable.paper)
+        paperImage.setBackgroundColor(Color.rgb(98,0,238))
         rockImage.setOnClickListener { playGame(0) }
         paperImage.setOnClickListener { playGame(1) }
         scissorImage.setOnClickListener { playGame(2) }
@@ -87,15 +94,12 @@ class MainFragment : Fragment() {
         return randomNumber
     }
 
-
     private fun playGame(userMove: Int) {
         playerMove.setImageResource(possibleMoves[userMove])
-        var computerMove = randomComputerMovePicker()
+        val computerMove = randomComputerMovePicker()
         val gameResult = checkInput(userMove, computerMove)
         addGameToDatabase(userMove, computerMove, gameResult)
     }
-
-
 
     private fun addGameToDatabase(userMove: Int, computerMove: Int, result: Int) {
         var win = 0
@@ -104,11 +108,6 @@ class MainFragment : Fragment() {
         if(result == 0){draw++}
         if(result < 0){loss++}
         if(result > 0){win++}
-//        when (result) {
-//            getString(R.string.win) -> win++
-//            getString(R.string.Lose) -> loss++
-//            getString(R.string.Tie) -> draw++
-//        }
 
         val game = Game(userMove, computerMove, Date(), result, win, loss, draw)
 
@@ -119,7 +118,7 @@ class MainFragment : Fragment() {
             }
         }
     }
-
+    //TODO first time it gives no results
     private suspend fun updateStatistics() {
         val wins = gamesRepository.getWins()
         val draws = gamesRepository.getDraws()

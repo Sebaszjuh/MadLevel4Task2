@@ -4,7 +4,7 @@
     <!-- Strings used for fragments for navigation -->
 
 <!--    Strings for main_fragment-->
-    <string name="statistics">Win: %1d\tDraw: %2d\tLose: %3d</string>
+    <string name="statistics">Win: %1d \tDraw: %2d \tLose: %3d</string>
     <string name="first_fragment_label">Game fragment</string>
     <string name="history_button">History</string>
     <string name="versus">V.S.</string>
@@ -20,5 +20,4 @@
     <string name="win">You Won!</string>
     <string name="Lose">You Lost!</string>
     <string name="Tie">You Tied?</string>
-
 </resources>
