@@ -27,15 +27,12 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setHasOptionsMenu(true)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        gamesRepository = GameRepository(requireContext())
-        init()
-    }
+
 
     /**
      * Initialises images and click listeners
@@ -134,6 +131,12 @@ class MainFragment : Fragment() {
         val losses = gamesRepository.getLosses()
         statistics.text =
             resources.getString(R.string.statistics, wins, tie, losses)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        gamesRepository = GameRepository(requireContext())
+        init()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

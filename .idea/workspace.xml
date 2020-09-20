@@ -10,26 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d5f187e-83e6-4743-bd65-9185c8424d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_1_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_browser_browser_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete_white_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/DAO/GameDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/DAO/GameDAO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Database/GameRoomDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Database/GameRoomDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Model/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Model/Game.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Repository/GameRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Repository/GameRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +30,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="27cab168dc1c7ece" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,11 +53,11 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="navigationResourceFile" />
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin File" />
         <option value="JUnit4 Test Class" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -258,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600627841879</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed naming, added extra info in layout">
+      <created>1600628689145</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600628689145</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,7 +271,8 @@
     <MESSAGE value="implemented dateconverter &amp; database + new strings" />
     <MESSAGE value="Forgot repo initialisation" />
     <MESSAGE value="Fixed statistics on startup &amp; added backgroundcolor for images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed statistics on startup &amp; added backgroundcolor for images" />
+    <MESSAGE value="Changed naming, added extra info in layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed naming, added extra info in layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Notifications" timestamp="1600605752966">
@@ -290,19 +291,19 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="603" y="196" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600465924214" />
-    <state x="428" y="261" key="AndroidCreateResourceFileDialog" timestamp="1600458938325">
+    <state x="454" y="378" key="AndroidCreateResourceFileDialog" timestamp="1600631178592">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="428" y="261" key="AndroidCreateResourceFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600458938325" />
+    <state x="454" y="378" key="AndroidCreateResourceFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600631178592" />
     <state x="428" y="259" key="AndroidCreateResourceFileDialog/0.23.1680.949@0.23.1680.949" timestamp="1600372000442" />
     <state x="695" y="397" key="AndroidCreateXmlResourceDialog" timestamp="1600456849946">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="695" y="397" key="AndroidCreateXmlResourceDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600456849946" />
-    <state x="530" y="38" key="CommitChangelistDialog2" timestamp="1600627841697">
+    <state x="476" y="38" key="CommitChangelistDialog2" timestamp="1600634668010">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="530" y="38" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1600627841697" />
+    <state x="476" y="38" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1600634668010" />
     <state x="190" y="96" key="DiffContextDialog" timestamp="1600461157744">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -311,38 +312,38 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="639" y="448" key="Github.CreateGistDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600377908783" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1600628113856">
+    <state width="1638" height="363" key="GridCell.Tab.0.bottom" timestamp="1600631963381">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1600628113856" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1600628113855">
+    <state width="1638" height="363" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963381" />
+    <state width="1638" height="363" key="GridCell.Tab.0.center" timestamp="1600631963380">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1600628113855" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1600628113854">
+    <state width="1638" height="363" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963380" />
+    <state width="1638" height="363" key="GridCell.Tab.0.left" timestamp="1600631963379">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1600628113854" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1600628113856">
+    <state width="1638" height="363" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963379" />
+    <state width="1638" height="363" key="GridCell.Tab.0.right" timestamp="1600631963380">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1600628113856" />
-    <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1600603262906">
+    <state width="1638" height="363" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963380" />
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1600631963383">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1600603262906" />
-    <state width="1638" height="363" key="GridCell.Tab.1.center" timestamp="1600603262905">
+    <state width="1638" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963383" />
+    <state width="1638" height="363" key="GridCell.Tab.1.center" timestamp="1600631963382">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="363" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1600603262905" />
-    <state width="1638" height="363" key="GridCell.Tab.1.left" timestamp="1600603262905">
+    <state width="1638" height="363" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963382" />
+    <state width="1638" height="363" key="GridCell.Tab.1.left" timestamp="1600631963381">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="363" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1600603262905" />
-    <state width="1638" height="363" key="GridCell.Tab.1.right" timestamp="1600603262905">
+    <state width="1638" height="363" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963381" />
+    <state width="1638" height="363" key="GridCell.Tab.1.right" timestamp="1600631963382">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1600603262905" />
+    <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963382" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1600605809365">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -371,5 +372,16 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="954" y="223" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600599032240" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt</url>
+          <line>81</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
