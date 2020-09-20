@@ -6,7 +6,7 @@
 <!--    Strings for main_fragment-->
     <string name="statistics">Win: %1d \tDraw: %2d \tLose: %3d</string>
     <string name="first_fragment_label">Game fragment</string>
-    <string name="history_button">History</string>
+    <string name="historyButton">History</string>
     <string name="versus">V.S.</string>
     <string name="statisticLabel">Your all time statistics</string>
     <string name="welcome">Welcome</string>
@@ -17,6 +17,7 @@
 <!--    Strings for second Fragment-->
 
     <string name="second_fragment_label">History fragment</string>
+    <string name="historyClearButton">Clear history</string>
 
 <!--    Result of Game-->
     <string name="win">You Won!</string>
