@@ -38,11 +38,8 @@ class MainActivity : AppCompatActivity() {
 
     //TODO Database opzetten voor spelresultaten - DONE
     // Model maken voor gegevens ( resultaten, chosen action ) - IN PROGRESS
-    // Adapter voor databind model
     // DAO voor database - DONE
     // REPO voor database - DONE
-    // Click listeners maken op plaatjes
-    // Chosen images linken aan click listeners
     // Resultaten scherm
     // Delete knop in resultaten scherm
     // Knop in main naar resultaten scherm

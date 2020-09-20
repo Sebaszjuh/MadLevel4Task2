@@ -7,22 +7,37 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.madlevel4task2.R
 import kotlinx.android.parcel.Parcelize
+import java.util.*
 
 @Parcelize
 @Entity(tableName = "gameStatistic")
 data class Game(
+
+    @ColumnInfo
+    var chosenAction: Int,
+
+    @ColumnInfo
+    var computerAction: Int,
+
+    @ColumnInfo
+    var playDate: Date,
+
+    @ColumnInfo
+    var gameResult: Int,
+
+    @ColumnInfo
+    var win: Int? = 0,
+
+    @ColumnInfo
+    var loss: Int? = 0,
+
+    @ColumnInfo
+    var draw: Int? = 0,
+
+
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
+    @ColumnInfo
     var id: Long? = null,
-
-    @ColumnInfo(name = "chosenAction")
-    var chosenAction: String,
-
-    @ColumnInfo(name = "computerAction")
-    var computerAction: String,
-
-    @ColumnInfo(name = "amount")
-    var amount: Int
 
     ) : Parcelable {
     companion object {
