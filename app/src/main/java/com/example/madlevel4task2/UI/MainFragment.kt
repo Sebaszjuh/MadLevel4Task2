@@ -1,5 +1,6 @@
 package com.example.madlevel4task2.UI
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -26,23 +27,26 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setHasOptionsMenu(true)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        gamesRepository = GameRepository(requireContext())
-        init()
-    }
+
 
     /**
      * Initialises images and click listeners
      */
     private fun init() {
+        CoroutineScope(Dispatchers.Main).launch {
+            updateStatistics()
+        }
         scissorImage.setImageResource(R.drawable.scissors)
+        scissorImage.setBackgroundColor(Color.rgb(98,0,238))
         rockImage.setImageResource(R.drawable.rock)
+        rockImage.setBackgroundColor(Color.rgb(98,0,238))
         paperImage.setImageResource(R.drawable.paper)
+        paperImage.setBackgroundColor(Color.rgb(98,0,238))
         rockImage.setOnClickListener { playGame(0) }
         paperImage.setOnClickListener { playGame(1) }
         scissorImage.setOnClickListener { playGame(2) }
@@ -87,30 +91,28 @@ class MainFragment : Fragment() {
         return randomNumber
     }
 
-
+    /**
+     * Method for the gamemechanic to let the computerMove pick an action.
+     */
     private fun playGame(userMove: Int) {
         playerMove.setImageResource(possibleMoves[userMove])
-        var computerMove = randomComputerMovePicker()
+        val computerMove = randomComputerMovePicker()
         val gameResult = checkInput(userMove, computerMove)
         addGameToDatabase(userMove, computerMove, gameResult)
     }
 
-
-
+    /**
+     * Adds result of the game to the database, calls update of statistics
+     */
     private fun addGameToDatabase(userMove: Int, computerMove: Int, result: Int) {
         var win = 0
-        var draw = 0
+        var tie = 0
         var loss = 0
-        if(result == 0){draw++}
+        if(result == 0){tie++}
         if(result < 0){loss++}
         if(result > 0){win++}
-//        when (result) {
-//            getString(R.string.win) -> win++
-//            getString(R.string.Lose) -> loss++
-//            getString(R.string.Tie) -> draw++
-//        }
 
-        val game = Game(userMove, computerMove, Date(), result, win, loss, draw)
+        val game = Game(userMove, computerMove, Date(), result, win, loss, tie)
 
         CoroutineScope(Dispatchers.IO).launch {
             gamesRepository.insertGame(game)
@@ -120,12 +122,21 @@ class MainFragment : Fragment() {
         }
     }
 
+    /**
+     * Method to update the onscreen win,loss,tie
+     */
     private suspend fun updateStatistics() {
         val wins = gamesRepository.getWins()
-        val draws = gamesRepository.getDraws()
+        val tie = gamesRepository.getTies()
         val losses = gamesRepository.getLosses()
         statistics.text =
-            resources.getString(R.string.statistics, wins, draws, losses)
+            resources.getString(R.string.statistics, wins, tie, losses)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        gamesRepository = GameRepository(requireContext())
+        init()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

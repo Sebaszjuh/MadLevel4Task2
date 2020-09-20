@@ -32,7 +32,7 @@ data class Game(
     var loss: Int? = 0,
 
     @ColumnInfo
-    var draw: Int? = 0,
+    var tie: Int? = 0,
 
 
     @PrimaryKey(autoGenerate = true)

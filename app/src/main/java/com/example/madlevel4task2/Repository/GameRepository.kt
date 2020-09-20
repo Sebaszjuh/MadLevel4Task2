@@ -35,8 +35,8 @@ class GameRepository(context: Context) {
         return gameDAO.getWins()
     }
 
-    suspend fun getDraws(): Int {
-        return gameDAO.getDraws()
+    suspend fun getTies(): Int {
+        return gameDAO.getTies()
     }
 
     suspend fun getLosses(): Int {
