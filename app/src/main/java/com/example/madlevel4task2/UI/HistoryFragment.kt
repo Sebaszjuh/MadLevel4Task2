@@ -49,6 +49,9 @@ class HistoryFragment : Fragment() {
         getGameHistoryFromDatabase()
     }
 
+    /**
+     * Retrieves data from database
+     */
     private fun getGameHistoryFromDatabase() {
         CoroutineScope(Dispatchers.Main).launch {
             val gameHistory = withContext(Dispatchers.IO) {
@@ -60,6 +63,9 @@ class HistoryFragment : Fragment() {
         }
     }
 
+    /**
+     * Method removes all history games from the database
+     */
     private fun clearHistory() {
         CoroutineScope(Dispatchers.Main).launch {
             withContext(Dispatchers.IO) {
