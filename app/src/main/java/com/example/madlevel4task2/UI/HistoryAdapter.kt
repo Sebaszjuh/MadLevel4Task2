@@ -35,11 +35,14 @@ class HistoryAdapter(private val gameHistory: List<Game>) :
             itemView.computerImage.setImageResource(possibleMoves[game.computerAction])
         }
 
-        private fun parseResult(gameResult: Int): String{
-            if(gameResult == 0){
+        /**
+         * App uses -1, 0 and 1 everywhere to see if player won the game. It parses the gameresult into a string
+         */
+        private fun parseResult(gameResult: Int): String {
+            if (gameResult == 0) {
                 return "Tie"
             }
-            if(gameResult == 1){
+            if (gameResult == 1) {
                 return "You win!"
             }
             return "You Lose"

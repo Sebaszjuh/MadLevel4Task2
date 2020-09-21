@@ -9,21 +9,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d5f187e-83e6-4743-bd65-9185c8424d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete_white_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_history.xml" afterDir="false" />
+    <list default="true" id="6d5f187e-83e6-4743-bd65-9185c8424d6d" name="Default Changelist" comment="Changed naming, added extra info in layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Database/GameRoomDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/Database/GameRoomDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/MainFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +249,35 @@
       <option name="project" value="LOCAL" />
       <updated>1600628689145</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactored &amp; added icon">
+      <created>1600634738070</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600634738070</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changed layout constraints &amp;&amp; added history layout">
+      <created>1600634799984</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600634799984</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added history menu &amp;&amp; added additional strings">
+      <created>1600634857043</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600634857043</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented history fragment &amp;&amp; adapter">
+      <created>1600634889552</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1600634889552</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -272,7 +291,11 @@
     <MESSAGE value="Forgot repo initialisation" />
     <MESSAGE value="Fixed statistics on startup &amp; added backgroundcolor for images" />
     <MESSAGE value="Changed naming, added extra info in layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed naming, added extra info in layout" />
+    <MESSAGE value="Refactored &amp; added icon" />
+    <MESSAGE value="Changed layout constraints &amp;&amp; added history layout" />
+    <MESSAGE value="Added history menu &amp;&amp; added additional strings" />
+    <MESSAGE value="Implemented history fragment &amp;&amp; adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented history fragment &amp;&amp; adapter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Notifications" timestamp="1600605752966">
@@ -300,10 +323,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="695" y="397" key="AndroidCreateXmlResourceDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600456849946" />
-    <state x="476" y="38" key="CommitChangelistDialog2" timestamp="1600634668010">
+    <state x="0" y="0" width="1680" height="1050" key="CommitChangelistDialog2" timestamp="1600634889420">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="476" y="38" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1600634668010" />
+    <state x="0" y="0" width="1680" height="1050" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1600634889420" />
     <state x="190" y="96" key="DiffContextDialog" timestamp="1600461157744">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -344,10 +367,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1600631963382" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1600605809365">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1600634895527">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1600605809365" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1600634895527" />
     <state x="993" y="274" key="chooseDestDirectoryDialog" timestamp="1600599032195">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -372,16 +395,5 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="954" y="223" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1600599032240" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/madlevel4task2/UI/HistoryFragment.kt</url>
-          <line>81</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

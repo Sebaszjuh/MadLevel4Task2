@@ -9,7 +9,7 @@ import com.example.madlevel4task2.DAO.GameDAO
 import com.example.madlevel4task2.Model.Game
 
 
-// Database van product class
+// Database versie 2 because an typo in the variables
 @Database(entities = [Game::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class GameRoomDatabase : RoomDatabase(){
